@@ -8,7 +8,7 @@ void reverse(char* arr, int a, int b)
 
 	for (int i = a; i < ((b - a + 1) / 2) + a; i++)
 	{
-		temp = arr[i];//4
+		temp = arr[i];
 		arr[i] = arr[b - i + a];
 		arr[b - i + a] = temp;
 	}
