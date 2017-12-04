@@ -3,6 +3,7 @@
 #include<time.h>
 #include<string.h>
 #include"juggling.h"
+#include"Reverse.h"
 
 
 int main()
@@ -52,13 +53,13 @@ int main()
 	printf("Time spent for Block-Swap : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
 	*/
 
-	/* Reverse Rotation
+	// Reverse Rotation
 	strcpy(temp, arr);
 	begin = clock();
 	Reverse(arr, n, d);
 	end = clock();
 	printf("Time spent for Reverse : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
-	*/
+	
 	
 	return 0;
 }
