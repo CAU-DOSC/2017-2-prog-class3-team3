@@ -26,7 +26,6 @@ int main()
 
 	arr[n] = '\0';
 	temp[n] = '\0';
-	printf("Created string : %s\n", arr);
 
 	printf("Input d to shift: ");
 	scanf("%d", &d);
