@@ -18,6 +18,5 @@ void trivialSolution(char* ary, int length, int move) {
 	for (i = 0;i<move;i++) {
 		ary[length - move + i] = str[i];
 	}
-
 	free(str);
 }
