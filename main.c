@@ -3,7 +3,6 @@
 #include<time.h>
 #include<string.h>
 #include"juggling.h"
-#include"Reverse.h"
 
 
 int main()
