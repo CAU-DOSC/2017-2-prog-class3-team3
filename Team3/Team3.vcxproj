@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8EDA36D8-0AE3-4546-ACFA-6C74CB1A9F01}</ProjectGuid>
+    <ProjectGuid>{B1D1CAE0-E408-482A-B599-0080BD5A327A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ArrayRotation</RootNamespace>
+    <RootNamespace>Team3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,11 +135,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.c" />
-    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\main.c" />
+    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\juggling.c" />
+    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.h" />
+    <ClInclude Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\juggling.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

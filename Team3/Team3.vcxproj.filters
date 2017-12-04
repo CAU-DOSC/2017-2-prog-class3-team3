@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.c">
+    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\juggling.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\main.c">
+    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.h">
+    <ClInclude Include="..\..\..\..\..\cho%27s\source\repos\Array_Rotation\Team3\juggling.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
