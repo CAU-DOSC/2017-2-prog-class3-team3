@@ -1,7 +1,9 @@
-#include"juggling.h"
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
+#include"juggling.h"
+
 
 int main()
 {
@@ -10,39 +12,54 @@ int main()
 	int n, d;
 
 	// Input
-	printf("Input N : ");
+	printf("Input N to create random string  : ");
 	scanf("%d", &n);
 
-	arr = (char*)malloc(sizeof(char)*n);
-	temp = (char*)malloc(sizeof(char)*n);
+	arr = (char*)malloc(sizeof(char)*n+1);
+	temp = (char*)malloc(sizeof(char)*n+1);
 
-	printf("Input string : ");
-	scanf("%s", arr);
+	srand(time(NULL));
 
-	if (strlen(arr) != n) {
-		printf("Please Input again : ");
-		scanf("%s", arr);
+	for (int i = 0; i < n; i++) {
+		arr[i] = rand() % 26 + 65;
 	}
+
+	arr[n] = '\0';
+	temp[n] = '\0';
+	printf("Created string : %s\n", arr);
 
 	printf("Input d to shift: ");
 	scanf("%d", &d);
-
-
 
 	// Juggling Rotation
 	strcpy(temp, arr);
 	clock_t begin = clock();
 	juggling(arr, n, d);
 	clock_t end = clock();
-	printf("Time spent for juggling : %f s\n", (double)(end - begin));
+	printf("Time spent for juggling : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
 
+	// Trivial Rotation
 	strcpy(temp, arr);
 	begin = clock();
 	trivialSolution(arr, n, d);
 	end = clock();
-	printf("Time spent for trivial : %f s\n", (double)(end - begin));
+	printf("Time spent for trivial : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
 	
+	/* Block-Swap Rotation
+	strcpy(temp, arr);
+	begin = clock();
+	Block_swap(arr, n, d);
+	end = clock();
+	printf("Time spent for Block-Swap : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
+	*/
 
-	//other rotation 
-
+	/* Reverse Rotation
+	strcpy(temp, arr);
+	begin = clock();
+	Reverse(arr, n, d);
+	end = clock();
+	printf("Time spent for Reverse : %f s\n", (double)(end - begin)/CLOCKS_PER_SEC);
+	*/
+	
+	return 0;
 }
