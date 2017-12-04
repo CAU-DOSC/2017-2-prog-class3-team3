@@ -1,22 +1,17 @@
-#include<stdio.h>
+#include"juggling.h"
 
-	int gcd(int a, int b)
-		{
-			int c;
-			while (a != 0) {
-				c = a;
-				a = b%a;
-				b = c;
-			}
-			return b;
-		}
+int gcd(int a, int b)
+{
+	int c;
+	while (a != 0) {
+		c = a;
+		a = b % a;
+		b = c;
+	}
+	return b;
+}
 
-
-	int main()
-	{
-		char arr[] = { "abcdefghijk" };
-		int d = 3;
-		int n = strlen(arr);
+void juggling(char* arr, int n, int d){
 		char temp;
 		int i, j, k;
 		for (int i = 0; i < gcd(n, d); i++) {
@@ -33,5 +28,5 @@
 			}
 			arr[j] = temp;
 		}
-		printf("%s", arr);
+		printf("%s\n", arr);
 	}
