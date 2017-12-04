@@ -34,7 +34,14 @@ int main()
 	clock_t begin = clock();
 	juggling(arr, n, d);
 	clock_t end = clock();
-	printf("Time spent for juggling : %lld s", (long long)(end - begin) / CLOCKS_PER_SEC);
+	printf("Time spent for juggling : %f s\n", (double)(end - begin));
+
+	strcpy(temp, arr);
+	begin = clock();
+	trivialSolution(arr, n, d);
+	end = clock();
+	printf("Time spent for trivial : %f s\n", (double)(end - begin));
+	
 
 	//other rotation 
 
