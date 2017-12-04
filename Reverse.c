@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include "Reverse.h"
 
 void reverse(char* arr, int a, int b)
 {
