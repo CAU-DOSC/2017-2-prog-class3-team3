@@ -18,7 +18,4 @@ void Reverse(char *arr, int n, int d)
 	reverse(arr, 0, d - 1);
 	reverse(arr, d, n - 1);
 	reverse(arr, 0, n - 1);
-	for (int i = 0; i < n; i++)
-		printf("%c",arr[i]);
-	printf("\n");
 }
