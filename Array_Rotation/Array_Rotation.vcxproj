@@ -18,20 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Project4\Project4\juggling_rotation.c" />
-    <ClCompile Include="..\..\..\..\..\cho%27s\source\repos\Project4\Project4\main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="juggling.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0E5A163C-4D7B-4442-A0A8-D5B90677550D}</ProjectGuid>
+    <ProjectGuid>{8EDA36D8-0AE3-4546-ACFA-6C74CB1A9F01}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Project4</RootNamespace>
+    <RootNamespace>ArrayRotation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>Rotating_Array</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -142,6 +134,13 @@
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.c" />
+    <ClCompile Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\team3\2017-2-prog-class3-team3\Project4\juggling.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
