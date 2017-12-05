@@ -1,37 +1,37 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void swap(int arr[], int i1, int i2, int bs)
+void swap(char arr[], int i1, int i2, int bs)
 {
 	for (int i = 0; i < bs; i++)
 	{
-		int temp = arr[i1 + i];
+		char temp = arr[i1 + i];
 		arr[i1 + i] = arr[i2 + i];
 		arr[i2 + i] = temp;
 	}
 }
 
-void block_swap(int arr[], int bs, int arrs)
+void block_swap(char arr[], int bs, int arrs)
 {
-	/*blockÀÇ Å©±â°¡ 0ÀÌ°Å³ª ¹è¿­¼ººÐÀÇ °³¼ö °°À»°æ¿ì swapµÈ °á°ú´Â °°´Ù*/
+	/*blockì˜ í¬ê¸°ê°€ 0ì´ê±°ë‚˜ ë°°ì—´ì„±ë¶„ì˜ ê°œìˆ˜ ê°™ì„ê²½ìš° swapëœ ê²°ê³¼ëŠ” ê°™ë‹¤*/
 	if (bs == 0 || bs == arrs)
 		return;
 
-	/*blockÀÇ Å©±â°¡ ¹è¿­¼ººÐÀÇ °³¼öÀÇ Àý¹ÝÀÏ¶§*/
+	/*blockì˜ í¬ê¸°ê°€ ë°°ì—´ì„±ë¶„ì˜ ê°œìˆ˜ì˜ ì ˆë°˜ì¼ë•Œ*/
 	if (arrs - bs == bs)
 	{
 		swap(arr, 0, arrs - bs, bs);
 		return;
 	}
 
-	/*blockÀÇ Å©±â°¡ ¹è¿­ ¼ººÐÀÇ °³¼ö-blcokÀÇ Å©±âº¸´Ù ÀÛÀ» ¶§*/
+	/*blockì˜ í¬ê¸°ê°€ ë°°ì—´ ì„±ë¶„ì˜ ê°œìˆ˜-blcokì˜ í¬ê¸°ë³´ë‹¤ ìž‘ì„ ë•Œ*/
 	if (bs < arrs - bs)
 	{
 		swap(arr, 0, arrs - bs, bs);
 		block_swap(arr, bs, arrs - bs);
 	}
 
-	/*blockÀÇ Å©±â°¡ ¹è¿­ ¼ººÐÀÇ °³¼ö-blockÀÇ Å©±âº¸´Ù Å¬ ¶§*/
+	/*blockì˜ í¬ê¸°ê°€ ë°°ì—´ ì„±ë¶„ì˜ ê°œìˆ˜-blockì˜ í¬ê¸°ë³´ë‹¤ í´ ë•Œ*/
 	if (bs > arr - bs)
 	{
 		swap(arr, 0, bs, arrs - bs);
