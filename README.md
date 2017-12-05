@@ -20,7 +20,7 @@
  
  Juggling : gcd로 set을 정한 후 set의 같은 위치의 있는 문자 끼리 바꿈
    
- Trivial solution : 
+ Trivial solution : 이동해야 하는 d 크기만큼 배열 선언후 배열에 넣어놓고 이동시키고 남은 자리에 넣어서 바꿈     
  
  Block swap : 
 
